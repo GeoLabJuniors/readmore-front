@@ -1,0 +1,17 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, var(--color-purple), var(--color-blue-1));
+}
