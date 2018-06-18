@@ -1,0 +1,23 @@
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    &__item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+            margin-right: 1.875rem;
+        }
+    }
+
+    &__link {
+        line-height: 7rem;
+    }
+
+    &__img {
+        width: 1.5rem;
+        height: auto;
+    }
+}
