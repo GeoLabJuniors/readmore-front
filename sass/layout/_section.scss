@@ -1,3 +1,415 @@
 .section {
     margin-top: 5rem;
 }
+
+ul,h1,h2,h3,h4 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+
+.comp_sect {
+
+
+	.comp_fluid {
+		
+		padding: 160px 0;
+		    padding-bottom: 50px;
+	.comp_cont {
+
+
+		.comp_sld_col {
+			margin-top: 60px;
+				#demos {
+					.owl-carousel {
+						position: relative;
+
+
+							.owl-nav {
+								position: absolute;
+								width: 100%;
+								top: 50%;
+								transform:translateY(-50%);
+								margin-top: 0px;
+
+
+									.owl-prev {
+										background-image: url("../images/Asset 5-8.png");
+										width: 35px;
+    									height: 40px;
+    									background-repeat: no-repeat;
+    									position: absolute;
+    									left: -70px;
+    									z-index: -1;
+    									transform:translateY(-50%);
+    									background-position: center center;
+    									background-size: contain;
+    									outline: none;
+
+    									&:hover {
+    										background-color: unset;
+    										outline: none;
+    									}
+
+    									 	span {
+    									 		
+    									 		display: none;
+    									 	}
+									}
+
+									.owl-next {
+										background-image: url("../images/Asset 6-8.png");
+										width: 35px;
+    									height: 40px;
+    									background-repeat: no-repeat;
+    									position: absolute;
+    									z-index: -1;
+    									right: -70px;
+    									transform:translateY(-50%);
+    									background-position: center center;
+    									background-size: contain;
+    									outline: none;
+
+    									&:hover {
+    										background-color: unset;
+    										outline: none;
+    									}
+
+    									 	span {
+    									 		
+    									 		display: none;
+    									 	}
+									}
+							}
+
+						.owl-dots {
+							display: none;
+						}
+
+						.item {
+							height: unset;
+							background-color: rgba(0,173,239, .4);
+							    padding: 10px 12px;
+							    // height: 285px;
+
+								.cover_box {
+
+									height: 310px;
+									overflow: hidden;
+									a {
+										display: block;
+										height: 100%;
+										transition:.3s;
+										&:hover {
+												transform:scale(1.1,1.1);
+											}
+										img {
+
+											width: 100%;
+											height: 100%;
+											
+
+											
+										}
+									}
+								}
+
+
+								.book_info {
+									    margin-top: 5px;
+
+										h4 {
+											font-size: 17px;
+											color: #fff;
+										}
+
+										p {
+											font-size: 12px;
+											margin-bottom: 0px;
+											color: rgba(255,255,255, .67);
+										}
+								}
+
+
+						}
+					}
+
+				}   
+ 
+
+		}
+
+
+		    .comp_book_line {
+		    	width: 100%;
+		    	height: 1px;
+		    	background-color: #0072BB;
+		    }
+
+			.comp_book_tittle {
+				// background-image: url("Asset 2.png");
+				// background-repeat: no-repeat;
+				padding: 50px 0;
+				text-align: center;
+				position: relative;
+
+
+					.comp_book_tittle_bg {
+						position: absolute;
+						height: 100%;
+						width: 205px;
+    					border: 15px solid rgba(0, 173, 239, 0.46);
+						top: 0;
+						left: 0;
+					}
+
+					h3 {
+						    margin-right: 10px;
+						    margin-top: 0px;
+						    position: relative;
+    						z-index: 1;
+    						color: #fff;
+
+					}
+			}
+	}
+}
+
+}
+
+
+
+// Winner css
+
+.winner_fluid {
+		
+		padding: 30px 0;
+	.winner_cont {
+
+
+		.winner_sld_col {
+			margin-top: 60px;
+				#demos {
+					.owl-carousel {
+						position: relative;
+
+
+							.owl-nav {
+								position: absolute;
+								width: 100%;
+								top: 50%;
+								transform:translateY(-50%);
+								margin-top: 0px;
+
+
+									.owl-prev {
+										background-image: url("../images/Asset 5-8.png");
+										width: 35px;
+    									height: 40px;
+    									background-repeat: no-repeat;
+    									position: absolute;
+    									left: -70px;
+    									z-index: -1;
+    									transform:translateY(-50%);
+    									background-position: center center;
+    									background-size: contain;
+    									outline: none;
+
+    									&:hover {
+    										background-color: unset;
+    										outline: none;
+    									}
+
+    									 	span {
+    									 		
+    									 		display: none;
+    									 	}
+									}
+
+									.owl-next {
+										background-image: url("../images/Asset 6-8.png");
+										width: 35px;
+    									height: 40px;
+    									background-repeat: no-repeat;
+    									position: absolute;
+    									z-index: -1;
+    									right: -70px;
+    									transform:translateY(-50%);
+    									background-position: center center;
+    									background-size: contain;
+    									outline: none;
+
+    									&:hover {
+    										background-color: unset;
+    										outline: none;
+    									}
+
+    									 	span {
+    									 		
+    									 		display: none;
+    									 	}
+									}
+							}
+
+						.owl-dots {
+							display: none;
+						}
+
+						.item {
+							height: unset;
+							// background-color: rgba(0,173,239, .4);
+							background-color: unset;
+							border: 20px solid rgba(0,173,239, .4);
+							    padding: 10px 12px;
+							    // height: 285px;
+
+								.cover_box {
+
+									 background-color: rgba(0,173,239, .4);
+									 display: flex;
+    								flex-direction: column;
+    								align-items: center;
+    								    position: relative;
+    									z-index: 1;
+									// height: 310px;
+
+									.member_info_box {
+										text-align: center;
+										    padding: 10px 10px;
+
+											h3 {
+												color: #fff;
+												font-size: 28px;
+												margin-top: 5px;
+											}
+
+											h4 {
+												color: #fff;
+												margin-bottom: 10px;
+												font-size: 28px
+											}
+
+											p {
+												color: rgba(255,255,255,.75);
+												margin-bottom: 0;
+											}
+											span {
+
+												color: rgba(255,255,255,.75);
+											}
+
+									}
+
+
+									a {
+										display: block;
+										height: 200px;
+   										width: 200px;
+										border-radius: 50%;
+										overflow: hidden;
+										margin-top: 15px;
+										transition:.3s;
+										&:hover {
+												transform:scale(1.1,1.1);
+											}
+
+
+										img {
+
+											width: 100%;
+											height: 100%;
+										}
+									}
+
+									.places_div {
+									    margin-top: -20px;
+									    background-color: #72ABC4;								    
+									    padding: 5px 16px;
+									    position: relative;
+									    	.places_div_part1 {
+									    		position: absolute;
+									    		// background-color: red;
+									    		width: 75px;
+									    		height: 50px;
+									    		clip-path: polygon(75% 0%, 100% 50%,
+									    		 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+									    		 top: 7px;
+    											left: -38px;
+    											height: 106%;
+    											z-index: -1;
+    											background: linear-gradient(to bottom, #29698a 0%,#173b4d 100%);
+									    	}
+
+									    	.places_div_part2 {
+
+									    		position: absolute;
+									    		// background-color: red;
+									    		width: 75px;
+									    		height: 50px;
+									    		clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 
+									    		25% 100%, 0% 50%, 25% 0%);
+									    		top: 7px;
+    											right: -38px;
+    											height: 106%;
+    											z-index: -1;
+    											background: linear-gradient(to bottom, #29698a 0%,#173b4d 100%);
+									    	}
+
+									    	span {
+									    		color: #fff;
+									    		font-size: 28px;
+									    	}
+								
+									
+									}
+
+								}
+
+
+							
+
+						}
+					}
+
+				}   
+ 
+
+		}
+
+
+		    .winner_book_line {
+		    	width: 100%;
+		    	height: 1px;
+		    	background-color: #0072BB;
+		    }
+
+			.winner_book_tittle {
+				// background-image: url("Asset 2.png");
+				// background-repeat: no-repeat;
+				padding: 50px 0;
+				text-align: center;
+				position: relative;
+
+
+					.winner_book_tittle_bg {
+						position: absolute;
+						height: 100%;
+						width: 205px;
+    					border: 15px solid rgba(0, 173, 239, 0.46);
+						top: 0;
+						left: 0;
+					}
+
+					h3 {
+						    margin-right: 10px;
+						    margin-top: 0px;
+						    position: relative;
+    						z-index: 1;
+    						color: #fff;
+
+					}
+			}
+	}
+}
+
+

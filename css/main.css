@@ -16,10 +16,8 @@
   flex-direction: row;
   align-items: center;
   margin: 0; }
-
 .main-nav__item {
   list-style-type: none; }
-
 .main-nav__link:link, .main-nav__link:visited {
   font-family: var(--font-nino-bold);
   font-weight: 700;
@@ -31,7 +29,6 @@
   .main-nav__link:link img, .main-nav__link:visited img {
     height: 1.1rem;
     width: auto; }
-
 .main-nav__link--active {
   opacity: .58; }
 
@@ -151,13 +148,12 @@
     transform: translateY(0px); }
   to {
     transform: translateY(-2000px); } }
-
 .footer {
   height: 7rem;
   /* 112px */
   width: 100%;
   background-color: rgba(0, 115, 187, 0.651);
-  margin-top: 7rem; }
+  margin-top: 0px; }
 
 /* ჰედერი */
 .header {
@@ -185,6 +181,245 @@
 .section {
   margin-top: 5rem; }
 
+ul, h1, h2, h3, h4 {
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+.comp_sect .comp_fluid {
+  padding: 160px 0;
+  padding-bottom: 50px; }
+  .comp_sect .comp_fluid .comp_cont .comp_sld_col {
+    margin-top: 60px; }
+    .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel {
+      position: relative; }
+      .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0px; }
+        .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-prev {
+          background-image: url("../images/Asset 5-8.png");
+          width: 35px;
+          height: 40px;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -70px;
+          z-index: -1;
+          transform: translateY(-50%);
+          background-position: center center;
+          background-size: contain;
+          outline: none; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-prev:hover {
+            background-color: unset;
+            outline: none; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-prev span {
+            display: none; }
+        .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-next {
+          background-image: url("../images/Asset 6-8.png");
+          width: 35px;
+          height: 40px;
+          background-repeat: no-repeat;
+          position: absolute;
+          z-index: -1;
+          right: -70px;
+          transform: translateY(-50%);
+          background-position: center center;
+          background-size: contain;
+          outline: none; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-next:hover {
+            background-color: unset;
+            outline: none; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-nav .owl-next span {
+            display: none; }
+      .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .owl-dots {
+        display: none; }
+      .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item {
+        height: unset;
+        background-color: rgba(0, 173, 239, 0.4);
+        padding: 10px 12px; }
+        .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .cover_box {
+          height: 310px;
+          overflow: hidden; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .cover_box a {
+            display: block;
+            height: 100%;
+            transition: .3s; }
+            .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .cover_box a:hover {
+              transform: scale(1.1, 1.1); }
+            .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .cover_box a img {
+              width: 100%;
+              height: 100%; }
+        .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .book_info {
+          margin-top: 5px; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .book_info h4 {
+            font-size: 17px;
+            color: #fff; }
+          .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .book_info p {
+            font-size: 12px;
+            margin-bottom: 0px;
+            color: rgba(255, 255, 255, 0.67); }
+  .comp_sect .comp_fluid .comp_cont .comp_book_line {
+    width: 100%;
+    height: 1px;
+    background-color: #0072BB; }
+  .comp_sect .comp_fluid .comp_cont .comp_book_tittle {
+    padding: 50px 0;
+    text-align: center;
+    position: relative; }
+    .comp_sect .comp_fluid .comp_cont .comp_book_tittle .comp_book_tittle_bg {
+      position: absolute;
+      height: 100%;
+      width: 205px;
+      border: 15px solid rgba(0, 173, 239, 0.46);
+      top: 0;
+      left: 0; }
+    .comp_sect .comp_fluid .comp_cont .comp_book_tittle h3 {
+      margin-right: 10px;
+      margin-top: 0px;
+      position: relative;
+      z-index: 1;
+      color: #fff; }
+
+.winner_fluid {
+  padding: 30px 0; }
+  .winner_fluid .winner_cont .winner_sld_col {
+    margin-top: 60px; }
+    .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel {
+      position: relative; }
+      .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0px; }
+        .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-prev {
+          background-image: url("../images/Asset 5-8.png");
+          width: 35px;
+          height: 40px;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -70px;
+          z-index: -1;
+          transform: translateY(-50%);
+          background-position: center center;
+          background-size: contain;
+          outline: none; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-prev:hover {
+            background-color: unset;
+            outline: none; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-prev span {
+            display: none; }
+        .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-next {
+          background-image: url("../images/Asset 6-8.png");
+          width: 35px;
+          height: 40px;
+          background-repeat: no-repeat;
+          position: absolute;
+          z-index: -1;
+          right: -70px;
+          transform: translateY(-50%);
+          background-position: center center;
+          background-size: contain;
+          outline: none; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-next:hover {
+            background-color: unset;
+            outline: none; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-nav .owl-next span {
+            display: none; }
+      .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .owl-dots {
+        display: none; }
+      .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item {
+        height: unset;
+        background-color: unset;
+        border: 20px solid rgba(0, 173, 239, 0.4);
+        padding: 10px 12px; }
+        .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box {
+          background-color: rgba(0, 173, 239, 0.4);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          z-index: 1; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box {
+            text-align: center;
+            padding: 10px 10px; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box h3 {
+              color: #fff;
+              font-size: 28px;
+              margin-top: 5px; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box h4 {
+              color: #fff;
+              margin-bottom: 10px;
+              font-size: 28px; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box p {
+              color: rgba(255, 255, 255, 0.75);
+              margin-bottom: 0; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box span {
+              color: rgba(255, 255, 255, 0.75); }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box a {
+            display: block;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 15px;
+            transition: .3s; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box a:hover {
+              transform: scale(1.1, 1.1); }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box a img {
+              width: 100%;
+              height: 100%; }
+          .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .places_div {
+            margin-top: -20px;
+            background-color: #72ABC4;
+            padding: 5px 16px;
+            position: relative; }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .places_div .places_div_part1 {
+              position: absolute;
+              width: 75px;
+              height: 50px;
+              clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+              top: 7px;
+              left: -38px;
+              height: 106%;
+              z-index: -1;
+              background: linear-gradient(to bottom, #29698a 0%, #173b4d 100%); }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .places_div .places_div_part2 {
+              position: absolute;
+              width: 75px;
+              height: 50px;
+              clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+              top: 7px;
+              right: -38px;
+              height: 106%;
+              z-index: -1;
+              background: linear-gradient(to bottom, #29698a 0%, #173b4d 100%); }
+            .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .places_div span {
+              color: #fff;
+              font-size: 28px; }
+  .winner_fluid .winner_cont .winner_book_line {
+    width: 100%;
+    height: 1px;
+    background-color: #0072BB; }
+  .winner_fluid .winner_cont .winner_book_tittle {
+    padding: 50px 0;
+    text-align: center;
+    position: relative; }
+    .winner_fluid .winner_cont .winner_book_tittle .winner_book_tittle_bg {
+      position: absolute;
+      height: 100%;
+      width: 205px;
+      border: 15px solid rgba(0, 173, 239, 0.46);
+      top: 0;
+      left: 0; }
+    .winner_fluid .winner_cont .winner_book_tittle h3 {
+      margin-right: 10px;
+      margin-top: 0px;
+      position: relative;
+      z-index: 1;
+      color: #fff; }
+
 /* Basic Reset */
 *,
 *::before,
@@ -199,3 +434,5 @@ html {
 
 body {
   background: linear-gradient(to right, var(--color-purple), var(--color-blue-1)); }
+
+/*# sourceMappingURL=main.css.map */

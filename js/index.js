@@ -48,3 +48,52 @@ arrowRight.addEventListener('click', function(e) {
 });
 
 startSlide();
+
+
+
+
+// Owl One
+
+ $(document).ready(function() {
+              var owl = $('.owl-one');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 4
+                  }
+                }
+              })
+            });
+
+// Owl Two
+
+  $(document).ready(function() {
+              var owl2 = $('.owl-two');
+              owl2.owlCarousel({
+                margin: 20,
+                nav: true,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 3
+                  }
+                }
+              })
+            });
+
+
