@@ -1,0 +1,37 @@
+/* ნავიგაცია */
+.main-nav {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-family: var(--font-nino-bold);
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: var(--color-white);
+        text-decoration: none;
+        line-height: 112px;
+        margin: 0 1rem;
+
+        img {
+            height: 1.1rem;
+            width: auto;
+        }
+    }
+
+    &__link--active {
+        opacity: .58;
+    }
+
+    &__link:hover {
+        
+    }
+}
