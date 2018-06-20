@@ -1,5 +1,7 @@
 /* ნავიგაცია */
 .main-nav {
+    margin-left: auto;
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -18,11 +20,11 @@
         font-size: 1.125rem;
         color: var(--color-white);
         text-decoration: none;
-        line-height: 112px;
+        line-height: 7rem;
         margin: 0 1rem;
 
         img {
-            height: 1.1rem;
+            height: 1rem;
             width: auto;
         }
     }
@@ -34,4 +36,8 @@
     &__link:hover {
         
     }
+}
+
+.fixed-nav {
+    position: fixed;
 }
