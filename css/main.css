@@ -43,6 +43,20 @@ html {
 body {
   background: linear-gradient(to right, var(--color-purple), var(--color-blue-1)); }
 
+@font-face {
+  font-family: 'ALK Sanet';
+  src: url("../fonts/alk-sanet-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/alk-sanet-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alk-sanet-webfont.woff2") format("woff2"), url("../fonts/alk-sanet-webfont.woff") format("woff"), url("../fonts/alk-sanet-webfont.ttf") format("truetype"), url("../fonts/alk-sanet-webfont.svg#alk_sanetregular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-nino-mtavruli-bold-webfont.woff2") format("woff2"), url("../fonts/bpg-nino-mtavruli-bold-webfont.woff") format("woff"), url("../fonts/bpg-nino-mtavruli-bold-webfont.ttf") format("truetype"), url("../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold") format("svg");
+  /* Legacy iOS */ }
+
 /* ნავიგაცია */
 .main-nav {
   margin-left: auto; }
