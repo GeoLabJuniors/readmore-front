@@ -114,8 +114,3 @@ closeBtn.addEventListener('click', function() {
   siteTitle.style.display = "flex";
   mainNav.style.display = "flex";
 });
-
-// Fixed Navigation Menu
-let scrollTop = window.pageYOffset;
-let h = window.innerHeight;
-

@@ -1,4 +1,14 @@
 /* ანიმაციები */
+@keyframes fadeInGrow {
+    0% {
+        opacity: .2;
+        transform: scale(.96);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 @keyframes fadeIn {
     0% {
@@ -9,13 +19,10 @@
     }
 }
 
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+/* ანიმაციის კლასი */
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
 }

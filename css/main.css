@@ -8,22 +8,30 @@
   --color-blue-1: #161743;
   --color-blue-2: #0072BB;
   --color-blue-3: rgba(0, 115, 187, .29);
+  --color-blue-4: rgba(0, 115, 187, 0.64);
   --color-white: #ffffff; }
 
 /* ანიმაციები */
+@keyframes fadeInGrow {
+  0% {
+    opacity: .2;
+    transform: scale(0.96); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0px); } }
+/* ანიმაციის კლასი */
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards; }
 
 /* Basic Reset */
 *,
@@ -35,13 +43,23 @@
 
 html {
   font-size: 16px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: auto !important;
+  /* overriding docs.theme.min.css */ }
   @media only screen and (max-width: 1920px) {
     html {
       font-size: 13px; } }
 
 body {
-  background: linear-gradient(to right, var(--color-purple), var(--color-blue-1)); }
+  background: linear-gradient(to right, var(--color-purple), var(--color-blue-1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto !important;
+  /* overriding docs.theme.min.css */ }
+
+ul, h1, h2, h3, h4 {
+  margin-bottom: 0px;
+  margin-top: 0px; }
 
 @font-face {
   font-family: 'ALK Sanet';
@@ -74,11 +92,15 @@ body {
     color: var(--color-white);
     text-decoration: none;
     line-height: 7rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    padding: .4rem .6rem;
+    transition: all .2s ease-in; }
     .main-nav__link:link img, .main-nav__link:visited img {
       height: 1rem;
       width: auto; }
   .main-nav__link--active {
+    opacity: .58; }
+  .main-nav__link:hover {
     opacity: .58; }
 
 .fixed-nav {
@@ -97,14 +119,14 @@ body {
   width: 100%;
   height: 561px;
   background-color: var(--color-blue-3);
-  padding: 2rem;
+  padding: 2rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   display: none;
   position: relative;
-  animation: slideIn .6s ease-in; }
+  animation: slideInLeft .3s ease-in backwards; }
   .slide__title {
     font-family: var(--font-nino-bold);
     font-size: 2.25rem;
@@ -137,6 +159,13 @@ body {
   .arrow--left {
     left: -30px;
     transform: translateY(-50%) rotate(135deg); }
+
+/* ანიმაციის კლასი */
+.fade-in-grow {
+  animation-name: fadeInGrow;
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards; }
 
 .social-media {
   display: flex;
@@ -215,7 +244,7 @@ body {
   height: 7rem;
   /* 112px */
   width: 100%;
-  background-color: rgba(0, 115, 187, 0.651);
+  background-color: var(--color-blue-4);
   margin-top: 0px; }
 
 /* ჰედერი */
@@ -223,7 +252,11 @@ body {
   height: 7rem;
   /* 112px */
   width: 100%;
-  background-color: rgba(0, 115, 187, 0.651); }
+  background-color: var(--color-blue-4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000; }
   .header__content {
     display: flex;
     flex-direction: row;
@@ -250,9 +283,9 @@ body {
     width: 100%;
     display: none;
     align-items: center;
-    justify-content: space-between;
-    animation: fadeIn .5s ease-in; }
+    justify-content: space-between; }
 
+/* Search */
 input[type="search"].search__input {
   border: none;
   padding: .3rem 1rem;
@@ -260,7 +293,11 @@ input[type="search"].search__input {
   width: 80%;
   display: block;
   background: transparent;
-  box-shadow: none; }
+  box-shadow: none;
+  font-size: 1.4rem;
+  font-family: var(--font-alk-sanet);
+  color: var(--color-white);
+  letter-spacing: 1px; }
 
 .close-btn {
   font-size: 1.9rem;
@@ -268,46 +305,43 @@ input[type="search"].search__input {
   color: var(--color-white);
   transition: color .3s linear;
   padding: .2rem .3rem;
-  cursor: pointer;
-  animation: fadeIn .5s ease-in; }
+  cursor: pointer; }
   .close-btn:hover {
     color: #dcdee0; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: var(--color-white);
-  font-family: var(--font-nino-bold);
+  font-family: var(--font-alk-sanet);
   font-size: 1.6rem; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: var(--color-white);
-  font-family: var(--font-nino-bold);
+  font-family: var(--font-alk-sanet);
   font-size: 1.6rem; }
 
 :-ms-input-placeholder {
   /* IE 10+ */
   color: var(--color-white);
-  font-family: var(--font-nino-bold);
+  font-family: var(--font-alk-sanet);
   font-size: 1.6rem; }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: var(--color-white);
-  font-family: var(--font-nino-bold);
+  font-family: var(--font-alk-sanet);
   font-size: 1.6rem; }
 
 .section {
   margin-top: 5rem; }
-  .section--seasons .row {
-    position: relative; }
-
-ul, h1, h2, h3, h4 {
-  margin-bottom: 0px;
-  margin-top: 0px; }
+  .section--seasons {
+    margin-top: 13rem; }
+    .section--seasons .row {
+      position: relative; }
 
 .comp_sect .comp_fluid {
-  padding: 160px 0;
+  padding: 10rem 0;
   padding-bottom: 50px; }
   .comp_sect .comp_fluid .comp_cont .comp_sld_col {
     margin-top: 60px; }
@@ -357,8 +391,8 @@ ul, h1, h2, h3, h4 {
         display: none; }
       .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item {
         height: unset;
-        background-color: rgba(0, 173, 239, 0.4);
-        padding: 10px 12px; }
+        background-color: var(--color-blue-3);
+        padding: 1.375rem; }
         .comp_sect .comp_fluid .comp_cont .comp_sld_col #demos .owl-carousel .item .cover_box {
           height: 310px;
           overflow: hidden; }
@@ -394,7 +428,7 @@ ul, h1, h2, h3, h4 {
       position: absolute;
       height: 100%;
       width: 205px;
-      border: 15px solid rgba(0, 173, 239, 0.46);
+      border: 15px solid var(--color-blue-3);
       top: 0;
       left: 0; }
     .comp_sect .comp_fluid .comp_cont .comp_book_tittle h3 {
@@ -456,8 +490,8 @@ ul, h1, h2, h3, h4 {
       .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item {
         height: unset;
         background-color: unset;
-        border: 20px solid rgba(0, 173, 239, 0.4);
-        padding: 10px 12px; }
+        border: 1.375rem solid rgba(0, 173, 239, 0.4);
+        padding: 1.375rem; }
         .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box {
           background-color: rgba(0, 173, 239, 0.4);
           display: flex;
@@ -473,17 +507,20 @@ ul, h1, h2, h3, h4 {
               font-family: inherit;
               color: var(--color-white);
               font-size: 1.3125rem;
-              margin-top: 5px; }
+              margin-top: 1.625rem; }
             .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box h4 {
               font-family: inherit;
               color: var(--color-white);
               margin-bottom: 10px;
+              margin-top: 1.8rem;
               font-size: 1.3125rem; }
             .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box p {
               color: rgba(255, 255, 255, 0.75);
+              font-size: 1.125rem;
               margin-bottom: 0; }
             .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .member_info_box span {
-              color: rgba(255, 255, 255, 0.75); }
+              color: rgba(255, 255, 255, 0.75);
+              font-size: 1.125rem; }
           .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box a {
             display: block;
             height: 200px;
@@ -496,7 +533,8 @@ ul, h1, h2, h3, h4 {
               transform: scale(1.1, 1.1); }
             .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box a img {
               width: 100%;
-              height: 100%; }
+              height: 100%;
+              object-fit: cover !important; }
           .winner_fluid .winner_cont .winner_sld_col #demos .owl-carousel .item .cover_box .places_div {
             margin-top: -20px;
             background-color: #72ABC4;
