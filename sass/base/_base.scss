@@ -17,6 +17,12 @@ html {
     }
 }
 
+.pre-index,
+.pre-index body {
+    margin: 0;
+    overflow: hidden;
+}
+
 body {
     // background: linear-gradient(to right bottom, var(--color-purple), var(--color-blue-1));
     background: linear-gradient(to right, var(--color-purple), var(--color-blue-1));
