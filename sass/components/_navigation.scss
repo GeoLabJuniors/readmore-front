@@ -22,9 +22,8 @@
         text-decoration: none;
         line-height: 7rem;
         margin: 0 1rem;
-        padding: .4rem .6rem;
 
-        transition: all .2s ease-in;
+        transition: all .1s ease-in;
 
         img {
             height: 1rem;
@@ -39,8 +38,4 @@
     &__link:hover {
         opacity: .58;
     }
-}
-
-.fixed-nav {
-    position: fixed;
 }

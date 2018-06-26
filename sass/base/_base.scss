@@ -24,7 +24,6 @@ html {
 }
 
 body {
-    // background: linear-gradient(to right bottom, var(--color-purple), var(--color-blue-1));
     background: linear-gradient(to right, var(--color-purple), var(--color-blue-1));
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,4 +33,17 @@ body {
 ul,h1,h2,h3,h4 {
 	margin-bottom: 0px;
 	margin-top: 0px;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    margin: 2px;
+    background: var(--color-blue-2);
 }

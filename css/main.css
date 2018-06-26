@@ -9,6 +9,7 @@
   --color-blue-2: #0072BB;
   --color-blue-3: rgba(0, 115, 187, .29);
   --color-blue-4: rgba(0, 115, 187, 0.64);
+  --color-blue-5: rgba(0, 115, 187, 0.46);
   --color-white: #ffffff; }
 
 /* ანიმაციები */
@@ -66,6 +67,16 @@ ul, h1, h2, h3, h4 {
   margin-bottom: 0px;
   margin-top: 0px; }
 
+::-webkit-scrollbar {
+  width: .8rem; }
+
+::-webkit-scrollbar-track {
+  border-radius: 0; }
+
+::-webkit-scrollbar-thumb {
+  margin: 2px;
+  background: var(--color-blue-2); }
+
 @font-face {
   font-family: 'ALK Sanet';
   src: url("../fonts/alk-sanet-webfont.eot");
@@ -98,7 +109,6 @@ ul, h1, h2, h3, h4 {
     text-decoration: none;
     line-height: 7rem;
     margin: 0 1rem;
-    padding: .4rem .6rem;
     transition: all .1s ease-in; }
     .main-nav__link:link img, .main-nav__link:visited img {
       height: 1rem;
@@ -262,7 +272,7 @@ ul, h1, h2, h3, h4 {
 
 /* ჰედერი */
 .header {
-  height: 7rem;
+  height: auto;
   width: 100%;
   background-color: var(--color-blue-4);
   position: fixed;
@@ -271,6 +281,7 @@ ul, h1, h2, h3, h4 {
   z-index: 1000000;
   transition: all .3s ease-in; }
   .header__content {
+    height: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -282,8 +293,7 @@ ul, h1, h2, h3, h4 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    transition: all .3s ease-in; }
+    align-items: center; }
     .header__site-title img {
       display: block;
       width: auto;
@@ -296,14 +306,12 @@ ul, h1, h2, h3, h4 {
     margin-bottom: 0;
     transition: all .3s; }
   .header__search {
-    height: 7rem;
     width: 100%;
     display: none;
     align-items: center;
     justify-content: space-between; }
 
 .shrink {
-  height: 5rem;
   background-color: var(--color-blue-2); }
   .shrink .header__content {
     height: 5rem; }
@@ -446,7 +454,7 @@ input[type="search"].search__input {
   .comp_sect .comp_fluid .comp_cont .comp_book_line {
     width: 100%;
     height: 1px;
-    background-color: #0072BB; }
+    background-color: var(--color-blue-2); }
   .comp_sect .comp_fluid .comp_cont .comp_book_tittle {
     padding: 50px 0;
     text-align: center;
@@ -455,7 +463,7 @@ input[type="search"].search__input {
       position: absolute;
       height: 100%;
       width: 205px;
-      border: 15px solid var(--color-blue-3);
+      border: 15px solid var(--color-blue-5);
       top: 0;
       left: 0; }
     .comp_sect .comp_fluid .comp_cont .comp_book_tittle h3 {
@@ -594,7 +602,7 @@ input[type="search"].search__input {
   .winner_fluid .winner_cont .winner_book_line {
     width: 100%;
     height: 1px;
-    background-color: #0072BB; }
+    background-color: var(--color-blue-2); }
   .winner_fluid .winner_cont .winner_book_tittle {
     padding: 50px 0;
     text-align: center;
@@ -603,7 +611,7 @@ input[type="search"].search__input {
       position: absolute;
       height: 100%;
       width: 205px;
-      border: 15px solid rgba(0, 173, 239, 0.46);
+      border: 15px solid var(--color-blue-5);
       top: 0;
       left: 0; }
     .winner_fluid .winner_cont .winner_book_tittle h3 {

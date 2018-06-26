@@ -114,3 +114,16 @@ closeBtn.addEventListener('click', function() {
   siteTitle.style.display = "flex";
   mainNav.style.display = "flex";
 });
+
+// Shrink Header on scroll
+const header = document.getElementById('header');
+
+window.onscroll = function() {shrinkHeader();}
+
+function shrinkHeader() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+}

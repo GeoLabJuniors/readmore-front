@@ -1,6 +1,6 @@
 /* ჰედერი */
 .header {
-    height: 7rem; /* 112px */
+    height: auto;
     width: 100%;
     background-color: var(--color-blue-4);
 
@@ -9,12 +9,17 @@
     left: 0;
     z-index: 1000000;
 
+    transition: all .3s ease-in;
+
     &__content {
+        height: 7rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+
+        transition: all .3s ease-in;
     }
 
     &__site-title {
@@ -28,6 +33,8 @@
             display: block;
             width: auto;
             height: 6rem;
+
+            transition: all .3s ease-in;
         }
     }
 
@@ -36,14 +43,33 @@
         font-size: 1.3125rem;
         color: var(--color-white);
         margin-bottom: 0;
+
+        transition: all .3s;
     }
 
     &__search {
-        height: 7rem;
+        // height: 7rem;
         width: 100%;
         display: none;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+.shrink {
+    // height: 5rem;
+    background-color: var(--color-blue-2);
+
+    .header__content {
+        height: 5rem;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .header__site-title__logo {
+        transform: scale(.8);
     }
 }
 
