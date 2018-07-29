@@ -1,99 +1,15 @@
-let sliderImages = document.querySelectorAll('.slide');
-let arrowLeft = document.getElementById('arrow-left');
-let arrowRight = document.getElementById('arrow-right');
+// Shrink Header on scroll
+const header = document.getElementById('header');
 
-let current = 0;
+window.onscroll = function() {shrinkHeader();}
 
-// Clear all images
-function reset() {
-  for(let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].classList.remove('shown');
+function shrinkHeader() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
   }
 }
-
-// Initialize Slider
-function startSlide() {
-  reset();
-  sliderImages[0].classList.add('shown');
-}
-
-// Show prev
-function slideLeft() {
-  reset();
-  sliderImages[current - 1].classList.add('shown');
-  current--;
-}
-
-// Show next
-function slideRight() {
-  reset();
-  sliderImages[current + 1].classList.add('shown');
-  current++;
-}
-
-// Left arrow click
-arrowLeft.addEventListener('click', function(e) {
-  if(current === 0) {
-    current = sliderImages.length;
-  }
-  slideLeft();
-});
-
-// Right arrow click
-arrowRight.addEventListener('click', function(e) {
-  if(current === sliderImages.length - 1) {
-    current = - 1;
-  }
-  slideRight();
-});
-
-startSlide();
-
-
-
-
-// Owl One
-$(document).ready(function() {
-  var owl = $('.owl-one');
-  owl.owlCarousel({
-    margin: 10,
-    nav: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 4
-      }
-    }
-  })
-});
-
-// Owl Two
-$(document).ready(function() {
-  var owl2 = $('.owl-two');
-  owl2.owlCarousel({
-    margin: 20,
-    nav: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 3
-      }
-    }
-  })
-});
-
 
 // Display search form
 const displaySearch = document.getElementById('displaySearch');
@@ -115,15 +31,82 @@ closeBtn.addEventListener('click', function() {
   mainNav.style.display = "flex";
 });
 
-// Shrink Header on scroll
-const header = document.getElementById('header');
+// Modal - Facebook login
+const modalLoginFb = document.getElementById('modal-login-fb');
+const btnCloseFb = document.getElementById('modal-close-fb');
+const btnOpenFb = document.getElementById('modal-open-fb');
 
-window.onscroll = function() {shrinkHeader();}
+// When the user clicks on the button, open the modal
+btnOpenFb.onclick = function() {
+  modalLoginFb.style.display = "flex";
+}
 
-function shrinkHeader() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.classList.add('shrink');
-  } else {
-    header.classList.remove('shrink');
+// When the user clicks on <span> (x), close the modal
+btnCloseFb.onclick = function() {
+  modalLoginFb.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalLoginFb) {
+    modalLoginFb.style.display = "none";
   }
 }
+
+// Slider - Seasons
+$(document).ready(function() {
+  var firstSlider = $('.slider');
+  firstSlider.owlCarousel({
+    items: 1,
+    nav: true,
+    loop: true,
+    dots: false,
+    navElement: "div",
+  })
+});
+
+// Slider - Books
+$(document).ready(function() {
+  var owl = $('.books');
+  owl.owlCarousel({
+    margin: 50,
+    nav: true,
+    loop: true,
+    dots: false,
+    navElement: "div",
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      }
+    }
+  })
+});
+
+// Slider - Winners
+$(document).ready(function() {
+  var winners = $('.winners');
+  winners.owlCarousel({
+    margin: 120,
+    nav: true,
+    navElement: "div",
+    loop: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
+});
