@@ -1,0 +1,169 @@
+/* კონტაქტის გვერდი */
+.contact {
+    color: var(--color-white);
+
+    &__header {
+        font-family: var(--font-nino-bold);
+        font-size: 3rem;
+        margin-bottom: 3.125rem;
+    }
+
+    &__batumi__header,
+    &__tsu__header {
+        font-family: var(--font-rioni);
+        font-size: 2.25rem;
+        font-weight: 200;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+
+        margin-bottom: 5rem;
+
+        li {
+            font-size: 1.875rem;
+            font-family: var(--font-rioni);
+            font-weight: 100;
+            position: relative;
+            margin-left: 40px;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+
+    &__phone::before {
+        content: "";
+        background-image: url('../images/phone.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: -40px;
+        top: 3px;
+    }
+    &__mail::before {
+        content: "";
+        background-image: url('../images/mail.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 24px;
+        height: 16px;
+        position: absolute;
+        left: -40px;
+        top: 13px;
+    }
+    &__address::before {
+        content: "";
+        background-image: url('../images/pin.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 28px;
+        position: absolute;
+        left: -40px;
+        top: 3px;
+    }
+}
+
+.form {
+    margin-top: 80px;
+
+    &__input-group {
+        margin-bottom: 3.5rem;
+        position: relative;
+    }
+
+    &__input {
+        height: 5.25rem;
+        width: 40rem;
+        display: block;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-blue-6);
+        padding: 1rem;
+
+        color: var(--color-white);
+        font-family: var(--font-rioni);
+        font-size: 2.25rem;
+
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            background-color: var(--color-blue-3);
+        }
+
+        &:placeholder-shown + label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-1rem);
+        }
+    }
+
+    &__label {
+        font-family: var(--font-rioni);
+        font-size: 1rem;
+        color: var(--color-white);
+
+        display: block;
+        padding: 1rem;
+        position: absolute;
+        transition: all .2s ease-in;
+    }
+
+    &__input::-webkit-input-placeholder,
+    &__text::-webkit-input-placeholder {
+        font-family: var(--font-rioni);
+        font-size: 2.25rem;
+        opacity: .7;
+    }
+    &__input::-moz-input-placeholder,
+    &__text::-webkit-input-placeholder {
+        font-family: var(--font-rioni);
+        font-size: 2.25rem;
+        opacity: .7;
+    }
+
+    &__text {
+        height: 18rem;
+        width: 40rem;
+        padding: 1rem;
+        margin-bottom: 2.5rem;
+
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-blue-6);
+
+        color: var(--color-white);
+        font-family: var(--font-rioni);
+        font-size: 2.25rem;
+
+        outline: none;
+        transition: all .2s;
+    }
+
+    &__text:focus {
+        background-color: var(--color-blue-3);
+    }
+
+    &__submit {
+        height: 5.25rem;
+        width: 40rem;
+        display: block;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: var(--color-blue-4);
+
+        font-size: 2.25rem;
+        color: var(--color-white);
+        font-family: var(--font-rioni);
+    }
+}
