@@ -8,13 +8,12 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 100%;
     box-sizing: border-box;
-    height: auto !important; /* overriding docs.theme.min.css */
 
-    @media only screen and (max-width: 1920px) {
-        font-size: 13px;
-    }
+    // @media only screen and (max-width: 1920px) {
+    //     font-size: 12px;
+    // }
 }
 
 .pre-index,
@@ -24,17 +23,24 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, var(--color-purple), var(--color-blue-1));
+    background: linear-gradient(to right, var(--color-purple) 60%, var(--color-blue-1));
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto !important; /* overriding docs.theme.min.css */
 }
 
 ul,h1,h2,h3,h4 {
-	margin-bottom: 0px;
-	margin-top: 0px;
+    margin: 0px;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: .8rem;
 }

@@ -1,0 +1,13 @@
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-cell:nth-child(2) {
+    justify-self: end;
+}

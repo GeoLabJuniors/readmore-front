@@ -1,6 +1,11 @@
 .footer {
-    height: 7rem; /* 112px */
+    height: 7rem;
     width: 100%;
     background-color: var(--color-blue-4);
     margin-top: 0px;
+
+    &__content {
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
