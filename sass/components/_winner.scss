@@ -15,6 +15,12 @@
         border-radius: 50%;
         margin: 0 auto;
         overflow: hidden;
+
+        transition: all .2s ease-in;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__photo {
@@ -26,32 +32,36 @@
 }
 
 .places_div {
-    margin-top: -20px;
     background-color: #72ABC4;
     text-align: center;
     position: relative;
 
-    .places_div_part1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 1.2rem;
+
+    &_part1 {
         position: absolute;
         width: 75px;
         height: 50px;
         clip-path: polygon(75% 0%, 100% 50%,
             75% 100%, 0% 100%, 25% 50%, 0% 0%);
         top: 7px;
-        left: -38px;
+        left: -30px;
         height: 106%;
         z-index: -1;
         background: linear-gradient(to bottom, #29698a 0%,#173b4d 100%);
     }
 
-    .places_div_part2 {
+    &_part2 {
         position: absolute;
         width: 75px;
         height: 50px;
         clip-path: polygon(100% 0%, 75% 50%, 100% 100%,
         25% 100%, 0% 50%, 25% 0%);
         top: 7px;
-        right: -38px;
+        right: -30px;
         height: 106%;
         z-index: -1;
         background: linear-gradient(to bottom, #29698a 0%,#173b4d 100%);
@@ -60,7 +70,9 @@
     h3 {
         color: var(--color-white);
         font-family: var(--font-nino-bold);
-        font-size: 36px;
+        font-size: 2.25rem;
+
+        padding-top: 6px;
     }
 }
 
@@ -72,14 +84,14 @@
     h3 {
         font-family: inherit;
         color: var(--color-white);
-        font-size: 28px;
-        // font-size: 1.3125rem;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
     }
 
     h5 {
         color: rgba(255,255,255,.75);
         font-size: 1.125rem;
-        margin-bottom: 0;
+        margin-bottom: .5rem;
     }
     span {
         color: rgba(255,255,255,.75);

@@ -41,7 +41,7 @@ btnOpenFb.onclick = function() {
   modalLoginFb.style.display = "flex";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the modal
 btnCloseFb.onclick = function() {
   modalLoginFb.style.display = "none";
 }
@@ -52,6 +52,34 @@ window.onclick = function(event) {
     modalLoginFb.style.display = "none";
   }
 }
+
+let body = document.body,
+    html = document.documentElement;
+
+let height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+var starsFromTop = document.createElement("style");
+starsFromTop.innerHTML =
+ `#stars:after {
+    top: ${height};
+  }
+  #stars2:after {
+    top: ${height};
+  }
+  #stars3:after {
+    top: ${height};
+  }
+
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(${height * -1}px);
+    }
+}`;
+
+document.head.appendChild(starsFromTop);
 
 // Slider - Seasons
 $(document).ready(function() {

@@ -10,6 +10,14 @@
 		width: 1200px;
 		margin: 0 auto;
 		position: relative;
+
+		&--flex {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			margin-bottom: 100px;
+		}
 	}
 
 	&__title {
@@ -18,12 +26,17 @@
 		border: 20px solid var(--color-blue-4);
 
 		position: relative;
-		margin-bottom: 100px;
+	}
+
+	&__line {
+		width: 40%;
+		height: 2px;
+		background-color: var(--color-blue-2);
 	}
 
 	&__heading {
 		font-family: var(--font-nino-bold);
-		font-size: 48px;
+		font-size: 3rem;
 		color: var(--color-white);
 		white-space: nowrap;
 		position: absolute;

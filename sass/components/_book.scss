@@ -6,6 +6,11 @@
     &__cover {
         a {
             display: inline-block;
+            transition: all .2s ease-in;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
         img {
@@ -18,15 +23,17 @@
     &__info {
         font-family: var(--font-nino-bold);
         text-align: center;
+        margin-top: 1.5rem;
     }
 
     &__title {
-        font-size: 17px;
+        font-size: 1.5rem;
         color: var(--color-white);
+        margin-bottom: .8rem;
     }
 
     &__author {
-        font-size: 12px;
+        font-size: 1.3rem;
         color: rgba(255,255,255, .67);
     }
 }

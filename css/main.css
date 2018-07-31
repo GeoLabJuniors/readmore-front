@@ -85,6 +85,9 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media only screen and (max-width: 85.375em) {
+    html {
+      font-size: 12px; } }
 
 .pre-index,
 .pre-index body {
@@ -143,7 +146,12 @@ a {
   padding: 24px;
   background-color: var(--color-blue-3); }
   .book__cover a {
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
+    .book__cover a:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .book__cover img {
     width: 100%;
     height: 100%;
@@ -151,12 +159,14 @@ a {
        object-fit: cover; }
   .book__info {
     font-family: var(--font-nino-bold);
-    text-align: center; }
+    text-align: center;
+    margin-top: 1.5rem; }
   .book__title {
-    font-size: 17px;
-    color: var(--color-white); }
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: .8rem; }
   .book__author {
-    font-size: 12px;
+    font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.67); }
 
 /* Facebook Login Modal */
@@ -375,7 +385,6 @@ a {
 #stars:after {
   content: " ";
   position: absolute;
-  top: 1200px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -395,7 +404,6 @@ a {
 #stars2:after {
   content: " ";
   position: absolute;
-  top: 1200px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -415,28 +423,11 @@ a {
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 1200px;
   width: 3px;
   height: 3px;
   background: transparent;
   -webkit-box-shadow: 670px 1899px #FFF , 282px 722px #FFF , 1059px 1547px #FFF , 1933px 1956px #FFF , 1100px 945px #FFF , 1297px 1074px #FFF , 1253px 108px #FFF , 1161px 1334px #FFF , 90px 276px #FFF , 1583px 1019px #FFF , 1499px 429px #FFF , 699px 393px #FFF , 54px 1494px #FFF , 1971px 992px #FFF , 256px 1827px #FFF , 1451px 1742px #FFF , 1285px 1916px #FFF , 1425px 1231px #FFF , 1417px 1288px #FFF , 1265px 745px #FFF , 1634px 345px #FFF , 194px 1176px #FFF , 1596px 1745px #FFF , 814px 1549px #FFF , 1499px 489px #FFF , 1467px 526px #FFF , 518px 473px #FFF , 819px 1717px #FFF , 922px 98px #FFF , 1506px 35px #FFF , 1710px 103px #FFF , 727px 1442px #FFF , 1424px 312px #FFF , 1229px 518px #FFF , 186px 1615px #FFF , 1365px 593px #FFF , 1088px 571px #FFF , 1889px 429px #FFF , 339px 959px #FFF , 1088px 95px #FFF , 133px 1604px #FFF , 1699px 748px #FFF , 1951px 1746px #FFF , 860px 1950px #FFF , 827px 1291px #FFF , 1645px 1492px #FFF , 1751px 599px #FFF , 292px 1607px #FFF , 539px 1255px #FFF , 1267px 560px #FFF , 243px 1173px #FFF , 340px 794px #FFF , 409px 1595px #FFF , 1688px 961px #FFF , 1519px 1085px #FFF , 1021px 102px #FFF , 795px 753px #FFF , 312px 250px #FFF , 1964px 1906px #FFF , 621px 701px #FFF , 1933px 1947px #FFF , 1690px 21px #FFF , 975px 106px #FFF , 936px 847px #FFF , 441px 733px #FFF , 1220px 293px #FFF , 1705px 259px #FFF , 1308px 1062px #FFF , 442px 1356px #FFF , 65px 259px #FFF , 1159px 677px #FFF , 448px 155px #FFF , 1703px 597px #FFF , 871px 1274px #FFF , 1456px 784px #FFF , 729px 1894px #FFF , 1018px 1598px #FFF , 369px 211px #FFF , 1879px 1298px #FFF , 965px 947px #FFF , 1887px 716px #FFF , 1056px 1868px #FFF , 816px 1614px #FFF , 75px 1024px #FFF , 947px 950px #FFF , 1525px 1034px #FFF , 156px 1872px #FFF , 75px 1618px #FFF , 1155px 258px #FFF , 1423px 1393px #FFF , 1109px 601px #FFF , 809px 1967px #FFF , 1163px 1097px #FFF , 961px 882px #FFF , 1062px 1717px #FFF , 1523px 257px #FFF , 1945px 133px #FFF , 1277px 551px #FFF , 361px 1640px #FFF , 566px 1411px #FFF;
           box-shadow: 670px 1899px #FFF , 282px 722px #FFF , 1059px 1547px #FFF , 1933px 1956px #FFF , 1100px 945px #FFF , 1297px 1074px #FFF , 1253px 108px #FFF , 1161px 1334px #FFF , 90px 276px #FFF , 1583px 1019px #FFF , 1499px 429px #FFF , 699px 393px #FFF , 54px 1494px #FFF , 1971px 992px #FFF , 256px 1827px #FFF , 1451px 1742px #FFF , 1285px 1916px #FFF , 1425px 1231px #FFF , 1417px 1288px #FFF , 1265px 745px #FFF , 1634px 345px #FFF , 194px 1176px #FFF , 1596px 1745px #FFF , 814px 1549px #FFF , 1499px 489px #FFF , 1467px 526px #FFF , 518px 473px #FFF , 819px 1717px #FFF , 922px 98px #FFF , 1506px 35px #FFF , 1710px 103px #FFF , 727px 1442px #FFF , 1424px 312px #FFF , 1229px 518px #FFF , 186px 1615px #FFF , 1365px 593px #FFF , 1088px 571px #FFF , 1889px 429px #FFF , 339px 959px #FFF , 1088px 95px #FFF , 133px 1604px #FFF , 1699px 748px #FFF , 1951px 1746px #FFF , 860px 1950px #FFF , 827px 1291px #FFF , 1645px 1492px #FFF , 1751px 599px #FFF , 292px 1607px #FFF , 539px 1255px #FFF , 1267px 560px #FFF , 243px 1173px #FFF , 340px 794px #FFF , 409px 1595px #FFF , 1688px 961px #FFF , 1519px 1085px #FFF , 1021px 102px #FFF , 795px 753px #FFF , 312px 250px #FFF , 1964px 1906px #FFF , 621px 701px #FFF , 1933px 1947px #FFF , 1690px 21px #FFF , 975px 106px #FFF , 936px 847px #FFF , 441px 733px #FFF , 1220px 293px #FFF , 1705px 259px #FFF , 1308px 1062px #FFF , 442px 1356px #FFF , 65px 259px #FFF , 1159px 677px #FFF , 448px 155px #FFF , 1703px 597px #FFF , 871px 1274px #FFF , 1456px 784px #FFF , 729px 1894px #FFF , 1018px 1598px #FFF , 369px 211px #FFF , 1879px 1298px #FFF , 965px 947px #FFF , 1887px 716px #FFF , 1056px 1868px #FFF , 816px 1614px #FFF , 75px 1024px #FFF , 947px 950px #FFF , 1525px 1034px #FFF , 156px 1872px #FFF , 75px 1618px #FFF , 1155px 258px #FFF , 1423px 1393px #FFF , 1109px 601px #FFF , 809px 1967px #FFF , 1163px 1097px #FFF , 961px 882px #FFF , 1062px 1717px #FFF , 1523px 257px #FFF , 1945px 133px #FFF , 1277px 551px #FFF , 361px 1640px #FFF , 566px 1411px #FFF; }
-
-@-webkit-keyframes animStar {
-  from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
-  to {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); } }
-
-@keyframes animStar {
-  from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
-  to {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); } }
 
 /* მესამე სლაიდერი - გამარჯვებულები */
 .winner {
@@ -451,7 +442,12 @@ a {
     width: 160px;
     border-radius: 50%;
     margin: 0 auto;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
+    .winner__link:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .winner__photo {
     display: block;
     width: 100%;
@@ -460,30 +456,33 @@ a {
        object-fit: cover; }
 
 .places_div {
-  margin-top: -20px;
   background-color: #72ABC4;
   text-align: center;
-  position: relative; }
-  .places_div .places_div_part1 {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 1.2rem; }
+  .places_div_part1 {
     position: absolute;
     width: 75px;
     height: 50px;
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
             clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     top: 7px;
-    left: -38px;
+    left: -30px;
     height: 106%;
     z-index: -1;
     background: -webkit-gradient(linear, left top, left bottom, from(#29698a), to(#173b4d));
     background: linear-gradient(to bottom, #29698a 0%, #173b4d 100%); }
-  .places_div .places_div_part2 {
+  .places_div_part2 {
     position: absolute;
     width: 75px;
     height: 50px;
     -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
             clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     top: 7px;
-    right: -38px;
+    right: -30px;
     height: 106%;
     z-index: -1;
     background: -webkit-gradient(linear, left top, left bottom, from(#29698a), to(#173b4d));
@@ -491,7 +490,8 @@ a {
   .places_div h3 {
     color: var(--color-white);
     font-family: var(--font-nino-bold);
-    font-size: 36px; }
+    font-size: 2.25rem;
+    padding-top: 6px; }
 
 .member_info_box {
   text-align: center;
@@ -500,11 +500,12 @@ a {
   .member_info_box h3 {
     font-family: inherit;
     color: var(--color-white);
-    font-size: 28px; }
+    font-size: 1.75rem;
+    margin-bottom: 1rem; }
   .member_info_box h5 {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.125rem;
-    margin-bottom: 0; }
+    margin-bottom: .5rem; }
   .member_info_box span {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.125rem; }
@@ -669,15 +670,29 @@ input[type="search"].search__input {
     width: 1200px;
     margin: 0 auto;
     position: relative; }
+    .section__container--flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 100px; }
   .section__title {
     width: 156px;
     height: 112px;
     border: 20px solid var(--color-blue-4);
-    position: relative;
-    margin-bottom: 100px; }
+    position: relative; }
+  .section__line {
+    width: 40%;
+    height: 2px;
+    background-color: var(--color-blue-2); }
   .section__heading {
     font-family: var(--font-nino-bold);
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--color-white);
     white-space: nowrap;
     position: absolute;
